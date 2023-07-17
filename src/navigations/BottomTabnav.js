@@ -40,8 +40,8 @@ return(
     />
 
     <Tab.Screen
-      name="More"
-      component={More}
+      name="Settings"
+      component={Settings}
       
       options={{
         tabBarIcon: ({ color }) => (

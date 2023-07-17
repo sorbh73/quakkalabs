@@ -4,5 +4,6 @@
 
     <color name="splashscreen_bg">#00101f</color>
     <color name="blue_5">#000000</color>
+<color name="white">#FFF</color>
 
 </resources>

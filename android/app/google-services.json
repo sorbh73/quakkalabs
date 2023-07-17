@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "127631366625",
+    "project_id": "demopro-80bad",
+    "storage_bucket": "demopro-80bad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127631366625:android:310fed48fc648a9cc7daa0",
+        "android_client_info": {
+          "package_name": "com.demopro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127631366625-86e4ara0er3skl9tpujna0prnm7660r8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demopro",
+            "certificate_hash": "056349395ae5af747824a1ca79681efd3d37ca5b"
+          }
+        },
+        {
+          "client_id": "127631366625-i4sk2emmpj5fk3cfhkf1vbpnsdvj9q35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx9DoOt2rDJz8JiqhFLk6g2m7ghcA_ZtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127631366625-i4sk2emmpj5fk3cfhkf1vbpnsdvj9q35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

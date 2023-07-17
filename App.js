@@ -5,7 +5,7 @@ import React,{useEffect,useState,createContext} from 'react';
 import SplashScreen from 'react-native-splash-screen'
 import { NavigationContainer ,DefaultTheme} from '@react-navigation/native';
 import BottomTabnav from './src/navigations/BottomTabnav';
-
+import PushController from './src/PushController';
 export const AuthContext = createContext({ authState: {fontFemily:''}, setAuthState: () => {} });
 
 const App=()=> {
@@ -31,6 +31,8 @@ console.log(authState);
 
     <NavigationContainer >
    <BottomTabnav />
+   <PushController/>
+
   </NavigationContainer>
 
   </AuthContext.Provider>

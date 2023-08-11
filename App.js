@@ -3,39 +3,36 @@
 import 'react-native-gesture-handler'
 import React,{useEffect,useState,createContext} from 'react';
 import SplashScreen from 'react-native-splash-screen'
-import { NavigationContainer ,DefaultTheme} from '@react-navigation/native';
-import BottomTabnav from './src/navigations/BottomTabnav';
-import PushController from './src/PushController';
-export const AuthContext = createContext({ authState: {fontFemily:''}, setAuthState: () => {} });
+import { NavigationContainer ,createNavigationContainerRef} from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import SideDrowernav from './src/SideDrowernav';
+import { Provider as StoreProvider } from "react-redux";
+import store from './src/auth/store';
+import { SafeAreaProvider } from "react-native-safe-area-context";
+
+const Stack = createStackNavigator();
 
 const App=()=> {
-  const [authState,setAuthState] = useState(
-    {
-      fontFemily:'YatraOne-Regular',
-    }
-    );
-
-
 
 useEffect(()=>{
+
   let fun =()=>{
     SplashScreen.hide();
   }
-console.log(authState);
  setTimeout(fun,2000);  
 })
 
 
   return (
-    <AuthContext.Provider value={[authState,setAuthState]}>
+    <StoreProvider store={store}>
+<SafeAreaProvider style={{ flex: 1 }}>
 
-    <NavigationContainer >
-   <BottomTabnav />
-   <PushController/>
 
-  </NavigationContainer>
+   
+  <SideDrowernav/>
+ </SafeAreaProvider>
+  </StoreProvider>
 
-  </AuthContext.Provider>
 
   );
 }
